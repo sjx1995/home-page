@@ -1,4 +1,4 @@
-# link page
+# Home Page
 
 [Preview](https://sunly.link)
 
