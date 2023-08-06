@@ -9,13 +9,7 @@
 :root {
   --toggle-theme-transition: all 0.8s cubic-bezier(0.65, 0.05, 0.36, 1);
 
-  font-family:
-    "VT323" Inter,
-    system-ui,
-    Avenir,
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: "VT323", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
