@@ -5,6 +5,7 @@
  */
 import { createApp } from "vue";
 import App from "./App.vue";
+import "unfonts.css";
 import "./main.css";
 import { ipadCursorPlugin } from "ipad-cursor/vue";
 
