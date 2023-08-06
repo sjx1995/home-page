@@ -44,7 +44,7 @@ const handleChangeTheme = () => {
 <template>
   <div
     v-cursor-block
-    class="theme-switch"
+    :class="{ 'theme-switch': true, 'is-rotate': isChanging }"
     :style="{ backgroundColor: bgStyle.shallowColor, color: bgStyle.color }"
     @click="handleChangeTheme"
   >
@@ -63,7 +63,7 @@ const handleChangeTheme = () => {
       </span>
     </h1>
     <p class="bio">
-      <span v-cursor-text> I'm a front-end developer : ) </span>
+      <span v-cursor-text> I'm a front-end developer :) </span>
     </p>
     <p class="links">
       <span v-cursor-text> You can find me through the following ways: </span>
