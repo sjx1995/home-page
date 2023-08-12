@@ -51,6 +51,8 @@ const handleChangeTheme = () => {
     }, 100);
   }, 1000);
 };
+
+const shakeHand = ref(false);
 </script>
 
 <template>
@@ -71,8 +73,13 @@ const handleChangeTheme = () => {
   <main :style="{ color: bgStyle.color }">
     <h1>
       <span data-cursor="text"> Hi, I'm Sunly </span>
-      <span data-cursor="block" class="hi-emoji-wrapper">
-        <span class="hi-emoji"> 👋 </span>
+      <span
+        data-cursor="block"
+        class="hi-emoji-wrapper"
+        @mouseenter="() => (shakeHand = true)"
+        @mouseleave="() => (shakeHand = false)"
+      >
+        <span :class="{ 'hi-emoji': true, greet: shakeHand }"> 👋 </span>
       </span>
     </h1>
     <p class="bio">
