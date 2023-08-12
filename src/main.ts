@@ -7,10 +7,5 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import "unfonts.css";
 import "./main.css";
-import { ipadCursorPlugin } from "ipad-cursor/vue";
 
-createApp(App)
-  .use(ipadCursorPlugin, {
-    blockStyle: { radius: "auto" },
-  })
-  .mount("#app");
+createApp(App).mount("#app");
