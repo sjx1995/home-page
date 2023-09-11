@@ -6,12 +6,17 @@
 const links = [
   [
     {
+      icon: "icon-park-twotone:camp",
+      text: "Blog",
+      href: "https://blog.sunly.in",
+    },
+  ],
+  [
+    {
       icon: "ri:github-fill",
       text: "Github",
       href: "https://github.com/sjx1995",
     },
-  ],
-  [
     {
       icon: "iconamoon:email-duotone",
       text: "Email",
